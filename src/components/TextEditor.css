@@ -23,7 +23,7 @@
     border: 3px solid black;
     border-radius: 15px;
     margin-bottom: 40px;
-    resize: vertical;  /* Allows vertical resizing */
+    resize: vertical;  
     /* border: none; */
   }
   
@@ -60,12 +60,15 @@
     text-align: left;
     background-color: #ffcad4;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 15px;
+    padding-top: 2px;
+    /* border: 2px solid #e5383b; */
   }
   
   .summary h3 {
     color: #e5383b;
     margin-bottom: 10px;
+    text-shadow: 1px 1px white; 
   }
   
   .summary p {

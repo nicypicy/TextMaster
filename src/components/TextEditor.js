@@ -40,6 +40,16 @@ export default function TextEditor(){
         toast.success("Extra spaces removed!")
     }
 
+    function handleSpeech(){
+        if (text.trim()){
+            const speech = new SpeechSynthesisUtterance(text);
+            window.speechSynthesis.speak(speech);
+            toast.success("Speaking your text");
+        } else {
+            toast.error("No text to speak")
+        }
+    }
+
     return(
         <div className="text-editor">
             <h2 className="title">Try TextMaster: Smart Text Counter & Manipulator</h2>
@@ -55,7 +65,7 @@ export default function TextEditor(){
                 <button className="btn" onClick={handleClear}>Clear All</button>
                 <button className="btn" onClick={handleCopy}>Copy Text</button>
                 <button className="btn" onClick={handleRemoveSpaces}>Remove extra spaces</button>
-                <button className="btn">Speak</button>
+                <button className="btn" onClick={handleSpeech}>Speak</button>
             </div>
             <div className="summary">
         <h3>Text Summary</h3>

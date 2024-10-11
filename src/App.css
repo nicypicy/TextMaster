@@ -12,6 +12,7 @@
  h1{
   font-family: "Staatliches", sans-serif;
   font-size:xx-large;
+  text-shadow: 2px 2px white;
  }
  .App.dark-mode h1{
   color: #e5383b;
