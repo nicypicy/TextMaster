@@ -32,23 +32,26 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 40px;
+    
   }
   
  .btn {
-    background-color: #e5383b;
-    color: #ffffff;
+    background-color: #fefae0;
+    color: #ff477e;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     margin: 5px;
     cursor: pointer;
     font-size: 15px;
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-family: "Staatliches", sans-serif;
+    text-shadow: 1px 1px white; 
   }
   
   .btn:hover {
-    background-color: #ffcad4;
-    color: #e5383b;
+    background-color: #faedcd;
+    color: #ff477e;
   }
   
   .btn:focus {
@@ -58,7 +61,7 @@
   .summary {
     margin-top: 20px;
     text-align: left;
-    background-color: #ffcad4;
+    background-color: #fefae0;
     padding: 15px;
     border-radius: 15px;
     padding-top: 2px;
@@ -66,9 +69,11 @@
   }
   
   .summary h3 {
-    color: #e5383b;
+    color: black;
     margin-bottom: 10px;
-    text-shadow: 1px 1px white; 
+    text-shadow: 2px 2px white; 
+    font-family: "Staatliches", sans-serif;
+    font-weight: lighter;
   }
   
   .summary p {

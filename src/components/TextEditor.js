@@ -50,6 +50,20 @@ export default function TextEditor(){
         }
     }
 
+    const wordCount = text.trim().length === 0? 0 : text.trim().split(/\s+/).length;
+
+    const charCount = text.length;
+
+    function getReadingTime(){
+        const wordsPerMinute = wordCount < 100? 250 : 200;
+        const totalSeconds = Math.ceil((wordCount/ wordsPerMinute) * 60);
+        const minutes = Math.floor(totalSeconds/60);
+        const seconds = totalSeconds % 60;
+        return `${seconds} second(s)`;
+    }
+
+    const readingTime = getReadingTime();
+
     return(
         <div className="text-editor">
             <h2 className="title">Try TextMaster: Smart Text Counter & Manipulator</h2>
@@ -69,9 +83,9 @@ export default function TextEditor(){
             </div>
             <div className="summary">
         <h3>Text Summary</h3>
-        <p>Word Count: <span className="summary-word-count">0</span></p>
-        <p>Character Count: <span className="summary-char-count">0</span></p>
-        <p>Estimated Reading Time: <span className="summary-read-time">0</span> minute(s)</p>
+        <p>Word Count: <span className="summary-word-count">{wordCount}</span></p>
+        <p>Character Count: <span className="summary-char-count">{charCount}</span></p>
+        <p>Estimated Reading Time: <span className="summary-read-time">{readingTime}</span></p>
       </div>
       <ToastContainer />
         </div>

@@ -15,14 +15,15 @@
   text-shadow: 2px 2px white;
  }
  .App.dark-mode h1{
-  color: #e5383b;
+  color: white;
+  text-shadow: 2px 2px #ff477e;
  }
 
 nav {
   display: flex;                    
   justify-content: space-between;   
   align-items: center;              
-  background-color: #ffcad4;        
+  background-color: #bde0fe;        
   padding: 10px 60px;               
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
@@ -46,7 +47,7 @@ nav {
 
 nav a {
   text-decoration: none;            
-  color: #e5383b;                      
+  color: #ff477e;                      
   font-size: 1.2rem;               
   margin-left: 20px;   
   font-family: "Staatliches", sans-serif;
@@ -105,7 +106,7 @@ nav a:hover {
 }
 
 input:checked + .slider {
-  background-color: #d00000;
+  background-color: #ff477e;
 }
 
 input:checked + .slider:before {
