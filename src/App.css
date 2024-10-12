@@ -140,3 +140,7 @@ input:checked + .slider:before {
   text-align: left;
   font-weight: bold;
 }
+
+.seperator{
+  color: 1ps solid #ff477e;
+}

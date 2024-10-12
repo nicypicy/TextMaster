@@ -6,7 +6,8 @@ export default function Navbar({toggleTheme}){
         <div className="nav-left">
         {/* <img className="nav-logo" src={`${process.env.PUBLIC_URL}/textmaster-favicon-color.png`} alt="TextMaster Logo" /> */}
         <h1>TextMaster</h1>
-        <a href="#about">About</a>  
+        <a href="#about">About</a> 
+        <a href="#footer">Contact</a> 
         </div>
         <div className="nav-right">
             <label className="switch">
