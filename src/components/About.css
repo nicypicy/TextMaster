@@ -1,0 +1,48 @@
+
+
+.about-section {
+    padding: 20px;
+    /* background-color: #f9f9f9; */
+    color: #333;
+    /* border-radius: 8px; */
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .about-section h2,
+  .about-section h3 {
+    color: white;
+    font-family: "Staatliches", sans-serif;
+  text-align: left;
+  font-weight: lighter;
+  text-shadow: 2px 2px black;
+    margin-bottom: 10px;
+  }
+  
+  .about-section p {
+    line-height: 1.6;
+    font-weight: bold;
+    
+  }
+  
+  .about-section ul, 
+  .about-section ol {
+    margin-left: 10px;
+    /* font-weight: bold; */
+    background-color: #fefae0;
+    border-radius: 15px;
+    padding: 1.5rem;
+    color: #ff477e;
+    /*  */
+    /* padding: 20px; */
+
+  }
+  
+  .about-section li {
+    margin-bottom: 5px;
+    /* font-weight: bold; */
+    
+  }
+  

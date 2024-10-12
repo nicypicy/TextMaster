@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import TextEditor from './components/TextEditor';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import About from './components/About';
 // import "./TextEditor.css";
 
 
@@ -17,7 +18,11 @@ function App() {
   return(
     <div className={darkMode? "App dark-mode" : "App"}>
   <Navbar toggleTheme={toggleTheme}/>
+  <div className='wrapper'>
   <TextEditor />
+  <hr></hr>
+  <About />
+  </div>
   </div>
   )
 }

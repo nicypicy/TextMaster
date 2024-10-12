@@ -1,10 +1,12 @@
 .App {
   text-align: center;
   background-color: #ff8fab;
-  min-height: 100vh;
+  min-height: 150vh;
   transition: background-color 0.3s ease;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .App.dark-mode {
   background-color: #343a40;  
   /* color: #ffffff;   */
@@ -17,6 +19,10 @@
  .App.dark-mode h1{
   color: white;
   text-shadow: 2px 2px #ff477e;
+ }
+
+ .wrapper{
+  flex: 1;
  }
 
 nav {
@@ -113,3 +119,24 @@ input:checked + .slider:before {
   transform: translateX(24px);
 }
 
+.about-section{
+  padding: 20px;
+  margin-bottom: 50px;
+  /* background-color: ; */
+}
+
+#about{
+  color: #ffffff;
+}
+
+.about-title{
+  font-family: "Staatliches", sans-serif;
+  text-align: left;
+  font-weight: lighter;
+  text-shadow: 2px 2px black;
+}
+
+.about-para{
+  text-align: left;
+  font-weight: bold;
+}
