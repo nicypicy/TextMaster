@@ -57,7 +57,7 @@ export default function TextEditor(){
     function getReadingTime(){
         const wordsPerMinute = wordCount < 100? 250 : 200;
         const totalSeconds = Math.ceil((wordCount/ wordsPerMinute) * 60);
-        const minutes = Math.floor(totalSeconds/60);
+        // const minutes = Math.floor(totalSeconds/60);
         const seconds = totalSeconds % 60;
         return `${seconds} second(s)`;
     }
